@@ -7,53 +7,85 @@ $degree= "masters";
 $language="english";
 $semester="fall";
 $program="computer Science";
+if($catagory=='ALL')
+	{$u1=true; }
+else
+	{$u1= false;}
 
-if($catagory=="ALL"){
-	if ($university =="ALL"){
-		#contine from here
-		
+if($university=='ALL')
+	{$u2=true; }
+else
+	{$u2= false;}
 
+if($degree=='ALL')
+	{$u3=true; }
+else
+	{$u3= false;}
 
-	}
-	else if ($degree= ="ALL") {
-		# code...
-	}
-	elseif ($language=="ALL") {
-	# code...
-    }
-     else if ($semester=="ALL") {
-	# code...
-   }
-   else if ($program=="ALL") {
-	# code...
-   }
-   else{
+if($language=='ALL')
+	{$u4=true; }
+else
+	{$u4= false;}
 
-   	echo "error occured";
-   }
+if($semester=='ALL')
+	{$u5=true; }
+else
+	{$u5= false;}
 
-
-}
-else if ($university =="ALL") {
-	# code...
-}
-else if ($degree= ="ALL") {
-	# code...
-}
-elseif ($language=="ALL") {
-	# code...
-}
-else if ($semester=="ALL") {
-	# code...
-}
-else if ($program=="ALL") {
-	# code...
-}
-else{
-	$query = "select * from scholars";
+if($program=='ALL')
+	{$u6=true; }
+else
+	{$u6= false;}
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
