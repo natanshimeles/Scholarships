@@ -64,40 +64,42 @@
                     <p>APPLY NOW!!</p>
                </div>
 
-                <form action="index.php">
+                <form action="Appliers/search.php" id="demo" onsubmit=" return validate()">
         &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<b>catagory:</b>
            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input type="radio" name="st" value="All"size="45px"> &nbsp;&nbsp;All &nbsp;&nbsp;
-          <input type="radio"  name="st"value="Fs"size="45px"> &nbsp;&nbsp;Full ScholarShip &nbsp;&nbsp;
-          <input type="radio"  name="st"value="Ps"size="45px"> &nbsp;&nbsp;Partial ScholarShip
+          <input type="radio" name="catagory" value="All"size="45px"> &nbsp;&nbsp;All &nbsp;&nbsp;
+          <input type="radio"  name="catagory"value="Fs"size="45px"> &nbsp;&nbsp;Full ScholarShip &nbsp;&nbsp;
+          <input type="radio"  name="catagory"value="Ps"size="45px"> &nbsp;&nbsp;Partial ScholarShip
           <br><br><b>
-        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;University:  &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="45px"><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;University:  &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" 
+        name="university" size="45px"><br><br>
         &nbsp;&nbsp;&nbsp;</b>
 
 
       <b>    &nbsp;&nbsp;&nbsp; &nbsp;Degree:</b>   &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="radio" name="sp" value="All"size="45px"> &nbsp;&nbsp;All &nbsp;&nbsp;
-        <input type="radio"  name="sp"value="Fs"size="45px"> &nbsp;&nbsp;Non-Degree &nbsp;&nbsp;
-        <input type="radio"  name="sp"value="Ps"size="45px"> &nbsp;&nbsp;Bachelor&nbsp;&nbsp;
-        <input type="radio"  name="sp"value="Fs"size="45px"> &nbsp;&nbsp;Masters &nbsp;&nbsp;
-        <input type="radio"  name="sp"value="Ps"size="45px"> &nbsp;&nbsp;Doctor&nbsp;&nbsp;
+        <input type="radio" name="degreey" value="All"size="45px"> &nbsp;&nbsp;All &nbsp;&nbsp;
+        <input type="radio"  name="degree"value="Fs"size="45px"> &nbsp;&nbsp;Non-Degree &nbsp;&nbsp;
+        <input type="radio"  name="degree"value="Ps"size="45px"> &nbsp;&nbsp;Bachelor&nbsp;&nbsp;
+        <input type="radio"  name="degree"value="Fs"size="45px"> &nbsp;&nbsp;Masters &nbsp;&nbsp;
+        <input type="radio"  name="degree"value="Ps"size="45px"> &nbsp;&nbsp;Doctor&nbsp;&nbsp;
 
         <br><br>
         &nbsp;&nbsp;&nbsp;&nbsp;<b> &nbsp;&nbsp; &nbsp;Language:</b>
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="radio"  name="sk"value="Fs"size="45px"> &nbsp;&nbsp;All&nbsp;&nbsp;
-        <input type="radio"  name="sk"value="Ps"size="45px"> &nbsp;&nbsp;Chinese&nbsp;&nbsp;
-          <input type="radio"  name="sk"value="Ps"size="45px"> &nbsp;&nbsp;English&nbsp;&nbsp;
+        <input type="radio"  name="language"value="Fs"size="45px"> &nbsp;&nbsp;All&nbsp;&nbsp;
+        <input type="radio"  name="language"value="Ps"size="45px"> &nbsp;&nbsp;Chinese&nbsp;&nbsp;
+          <input type="radio"  name="language"value="Ps"size="45px"> &nbsp;&nbsp;English&nbsp;&nbsp;
         <br><br>
          &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Semester:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="radio"  name="sl"value="Fs"size="45px"> &nbsp;&nbsp;All &nbsp;&nbsp;
-        <input type="radio"  name="sl"value="Ps"size="45px"> &nbsp;&nbsp;Spring&nbsp;&nbsp;
-        <input type="radio"  name="sl"value="Fs"size="45px"> &nbsp;&nbsp;Autumn &nbsp;&nbsp;
+        <input type="radio"  name="semester"value="Fs"size="45px"> &nbsp;&nbsp;All &nbsp;&nbsp;
+        <input type="radio"  name="semester"value="Ps"size="45px"> &nbsp;&nbsp;Spring&nbsp;&nbsp;
+        <input type="radio"  name="semester"value="Fs"size="45px"> &nbsp;&nbsp;Autumn &nbsp;&nbsp;
         <br><br>
-        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Program:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><input type="text" size="45px" placeholder="pick a program name"><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Program:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><input type="text" size="45px" name="program" placeholder="pick a program name"><br><br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <!--<input class="btn btn-success btn-lg" type="image" src="" value="search" >-->
+        <input type="submit" value="search" name="">
      
       </form>
 
@@ -290,7 +292,7 @@
         <div class="row">
 
                <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.8s">
-                    <p class="white-color">Copyright &copy; cs connections</p>
+                    <p class="white-color">Copyright &copy;  ConnectionS</p>
                     <div class="wow fadeInUp" data-wow-delay="1s">
                          <ul class="social-icon">
                               <li><a href="#" class="fa fa-facebook"></a></li>
@@ -303,6 +305,44 @@
           </div>
      </div>
 </footer>
+<script type="text/javascript">
+
+
+  function validate(){
+    
+
+
+  
+  
+
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    document.getElementById("demo").innerHTML="<div style='padding:140px;'>"+this.responseText+"</div>";
+     
+    }
+  };
+  xhttp.open("GET", "Appliers/search.php", true);
+  document.getElementById("demo").innerHTML="<div style='padding:140px;'>hello</div>";
+  xhttp.send();
+  return false;
+  
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+</script>
 
 <!-- SCRIPTS -->
 <script src="js/jquery.js"></script>
