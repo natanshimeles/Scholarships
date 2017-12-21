@@ -251,7 +251,7 @@
                <div class="col-md-7 col-sm-10">
                     <!-- CONTACT FORM HERE -->
                     <div class="wow fadeInUp" data-wow-delay="0.4s">
-                        <form id="contact-form" action="#" method="get">
+                        <form id="contact-form" action="Appliers/sendmessages.php" method="get" onsubmit="return sendmessage()">
                               <div class="col-md-6 col-sm-6">
                                    <input type="text" class="form-control" name="name" placeholder="Name" required="">
                               </div>
@@ -343,6 +343,22 @@
 
 
 
+</script>
+
+
+<script type="text/javascript">
+  
+
+  function sendmessage(){
+
+   document.getElementById("contact-form").innerHTML="Sucessfully submitted we will send a reply on your email box as soon as possible"
+
+    return false;
+
+
+
+
+  }
 </script>
 
 <!-- SCRIPTS -->

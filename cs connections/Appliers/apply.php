@@ -40,7 +40,7 @@ session_start();
           </div>
           <div class="first">
             
-    <form name="RegisterForSummer" method="POST" action="apply.php" enctype="multipart/form-data"  onsubmit="return validateform()">
+    <form name="RegisterForSummer" method="POST" action="payment.php" enctype="multipart/form-data"  onsubmit="return validateform()">
       
   <div class="form-group">
     <label for="exampleInputEmail1">first name</label>
