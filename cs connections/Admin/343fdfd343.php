@@ -16,7 +16,7 @@ if(empty($_SESSION["username"])){
 
 
 $root =$_SERVER['DOCUMENT_ROOT'];
-require "$root/scholarships/Conn.php";
+require "$root/scholarships/cs connections/Conn.php";
 
 
 ?>
@@ -37,10 +37,12 @@ require "$root/scholarships/Conn.php";
     <div class="container-fluid ">
       <div class="row">
         <div class="col-md-4 col-lg-2">
-          <a href="addscholarships.php"><button class="btn btn-danger">Add scholarships</button></a>
+          <a href="addscholarships.php"><button class="btn btn-danger">Add scholarships</button></a><br>
+          <a href="readmessages.php"><button class="btn btn-danger">Read Message</button></a><br>
 
         </div>
         <div class="col-md-4 col-lg-8 third">
+
 
          <div style="background-color: black; opacity: 0.9;">
 

@@ -7,7 +7,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Welcome To Lecture Program</title>
+    <title>Connections Scholarships</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,28 +18,56 @@
   <body>
    <div class="container-fluid ">
       <div class="row">
-        <div class="col-md-4 col-lg-4">
+        <div class="col-md-2 col-lg-2">
     	
 
 
     </div>
-    <div class="col-md-4 col-lg-4 first">
-    	<form name="loginmaster" method="POST" action="autiadmin.php" enctype="multipart/form-data">
-  <div class="form-group">
-    <label for="exampleInputEmail1">User Name</label>
-    <input name="username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter user Name" required="">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">password</label>
-    <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required="">
-  </div>
-  <button  type="LogIn" class="btn btn-primary">Login</button>
+    <div class="col-md-8 col-lg-8 first">
+<form action="Appliers/search.php"  onsubmit=" return validate()">
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<b>catagory:</b>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="catagory" value="All"size="45px"> &nbsp;&nbsp;All &nbsp;&nbsp;
+          <input type="radio"  name="catagory" value="Full ScholarShip"size="45px"> &nbsp;&nbsp;Full ScholarShip &nbsp;&nbsp;
+          <input type="radio"  name="catagory" value="Partial ScholarShip"size="45px"> &nbsp;&nbsp;Partial ScholarShip
+          <br><br><b>
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;University:  &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" 
+        name="university" size="45px"><br><br>
+        &nbsp;&nbsp;&nbsp;</b>
+
+
+      <b>    &nbsp;&nbsp;&nbsp; &nbsp;Degree:</b>   &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="degreey" value="All"size="45px"> &nbsp;&nbsp;All &nbsp;&nbsp;
+        <input type="radio"  name="degree" value="Non-Degree"size="45px"> &nbsp;&nbsp;Non-Degree &nbsp;&nbsp;
+        <input type="radio"  name="degree" value="Bachelor"size="45px"> &nbsp;&nbsp;Bachelor&nbsp;&nbsp;
+        <input type="radio"  name="degree" value="Masters"size="45px"> &nbsp;&nbsp;Masters &nbsp;&nbsp;
+        <input type="radio"  name="degree" value="Doctor"size="45px"> &nbsp;&nbsp;Doctor&nbsp;&nbsp;
+
+        <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<b> &nbsp;&nbsp; &nbsp;Language:</b>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio"  name="language" value="All"size="45px"> &nbsp;&nbsp;All&nbsp;&nbsp;
+        <input type="radio"  name="language" value="Chinese"size="45px"> &nbsp;&nbsp;Chinese&nbsp;&nbsp;
+          <input type="radio"  name="language" value="English"size="45px"> &nbsp;&nbsp;English&nbsp;&nbsp;
+        <br><br>
+         &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<b>Semester: </b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio"  name="semester"value="All" size="45px"> &nbsp;&nbsp;All &nbsp;&nbsp;
+        <input type="radio"  name="semester"value="Spring" size="45px"> &nbsp;&nbsp;Spring&nbsp;&nbsp;
+        <input type="radio"  name="semester"value="Autumn" size="45px"> &nbsp;&nbsp;Autumn &nbsp;&nbsp;
+        <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<b>Program: </b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><input type="text" size="45px" name="program" placeholder="enter a program"><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!--<input class="btn btn-success btn-lg" type="image" src="" value="search" >-->
+       sample pictures: <input type="file" name=""><br><br>
+        <input type="submit" value="Add" name="">
+
 </form>
     	
 
 
     </div>
-    <div class="col-md-4 col-lg-4">
+    <div class="col-md-2 col-lg-2">
     	
 
 

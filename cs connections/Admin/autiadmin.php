@@ -1,7 +1,7 @@
 <?php
 session_start();
 $root =$_SERVER['DOCUMENT_ROOT'];
-require "$root/scholarships/Conn.php";
+require "$root/scholarships/cs connections/Conn.php";
 if (isset($_POST["username"])  && isset($_POST["password"])) {
 	$username = $_POST["username"];
 	$password = $_POST["password"];
