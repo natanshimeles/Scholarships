@@ -143,7 +143,7 @@ if($result->num_rows > 0){
 		echo  "<td>".$cat."</td>"."    "."<td>".$uni."</td>"."    "."<td>".$degree."</td>"."    "."<td>".
 		$language."</td>".""."<td>".$semester."</td>"."   "."<td>".$program."</td>"."<td>".
 		     "<a  href='Appliers/apply.php?catagory=$cat&univeristy=$uni&degree=$degree&language=$language&semester=&semester&program=$program'><button>Apply</button></a>".
-		     "</td>"."<td>"."<a href='universities/nuaa.php'>select</a>"."</td>"."</tr>";
+		     "</td>"."<td>"."<a href='universities/nuaa.php'>more details</a>"."</td>"."</tr>";
 		
 		echo "</table>";
 		echo "</div>";

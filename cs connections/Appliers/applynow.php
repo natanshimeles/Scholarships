@@ -2,16 +2,16 @@
 session_start();
 
 
-$firstname=htmlentities($_POST[""]);
-$lastname=htmlentities($_POST[""]);
-$email =htmlentities($_POST[""]);
-$phoneno=htmlentities($_POST[""]);
-$passportno=htmlentities($_POST[""]);
-$gender=htmlentities($_POST[""]);;
-$country=htmlentities($_POST[""]);
-$birthcountry=htmlentities($_POST[""]);
-$currentresidence=htmlentities($_POST[""]);
-$dob=htmlentities($_POST[""]);
+$firstname=htmlentities($_POST["fname"]);
+$lastname=htmlentities($_POST["lname"]);
+$email =htmlentities($_POST["email"]);
+$phoneno=htmlentities($_POST["cellpo"]);
+$passportno=htmlentities($_POST["passno"]);
+$gender=htmlentities($_POST["Gender"]);;
+$country=htmlentities($_POST["CR"]);
+$birthcountry=htmlentities($_POST["BR"]);
+$currentresidence=htmlentities($_POST["Nationality"]);
+$dob=htmlentities($_POST["dob"]);
 
 
 

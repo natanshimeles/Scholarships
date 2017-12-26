@@ -33,7 +33,7 @@ session_start();
         </div>
         <div class="col-md-4  col-lg-8">
           <div style="text-align: center;">
-          <h3>Please fill this form carefully</h3>
+          <h3 style="color:blue;">Please fill this form carefully</h3>
           
           
         
@@ -66,6 +66,10 @@ session_start();
   <div class="form-group">
     <label for="exampleInputPassword1">Passport number</label>
     <input name="passno" type="text" class="form-control" id="exampleInputPassword1" placeholder="PNO" required="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Email</label>
+    <input name="email" type="email" class="form-control" id="exampleInputPassword1" placeholder="Email" required="">
   </div>
 
   <div class="form-group">
